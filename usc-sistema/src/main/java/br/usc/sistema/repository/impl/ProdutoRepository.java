@@ -8,7 +8,7 @@ import java.util.Map;
 
 import br.usc.log.enums.LogLevelEnum;
 import br.usc.log.services.LogFactory;
-import br.usc.log.services.impl.LogServiceImpl;
+import br.usc.log.services.LogServiceInterface;
 import br.usc.sistema.entity.Produto;
 import br.usc.sistema.exception.InvalidParameterException;
 import br.usc.sistema.exception.InvalidProductException;
@@ -17,7 +17,7 @@ import br.usc.sistema.repository.ProdutoRepositoryInterface;
 
 public class ProdutoRepository implements ProdutoRepositoryInterface {
 
-	private static LogServiceImpl log = LogFactory.getInstance().getLogServiceImpl();
+	private static LogServiceInterface log = LogFactory.getInstance().getLogServiceImpl();
 
 	private int index = 0;
 	private Map<Integer, Produto> repository = null;

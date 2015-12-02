@@ -5,7 +5,7 @@ import br.usc.log.services.impl.LogServiceImpl;
 public class LogFactory {
 
 	private static LogFactory logFactory;
-	private LogServiceImpl logServiceImpl;
+	private LogServiceInterface logService;
 
 	public static LogFactory getInstance() {
 		if (logFactory == null) {
@@ -14,10 +14,10 @@ public class LogFactory {
 		return logFactory;
 	}
 
-	public LogServiceImpl getLogServiceImpl() {
-		if(logServiceImpl == null){ 
-			logServiceImpl= new LogServiceImpl();
+	public LogServiceInterface getLogServiceImpl() {
+		if(logService == null){ 
+			logService= new LogServiceImpl();
 		}
-		return logServiceImpl;
+		return logService;
 	}
 }
