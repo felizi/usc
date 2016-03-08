@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+	version="2.0">
+	<endpoint name="Calculadora"
+		implementation="br.usc.providerservice.soap.calculadora.service.CalculadoraService"
+		url-pattern="/ws/calculadora" />
+
+	<endpoint name="CalculadoraSalarioLiquido"
+		implementation="br.usc.providerservice.soap.calculadorasalario.service.CalcularSalarioLiquidoService"
+		url-pattern="/ws/calculadoraSalarioLiquido" />
+</endpoints>
