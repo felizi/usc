@@ -1,0 +1,8 @@
+br.usc.poo.sistema.business
+br.usc.poo.sistema.business.impl
+br.usc.poo.sistema.entity
+br.usc.poo.sistema.exception
+br.usc.poo.sistema.repository
+br.usc.poo.sistema.repository.generator
+br.usc.poo.sistema.service
+br.usc.poo.sistema.service.impl
