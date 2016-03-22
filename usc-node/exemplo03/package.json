@@ -1,0 +1,10 @@
+{
+  "name": "exemplo03",
+  "description": "Criando uma API RESTFul",
+  "author": "Daniel Felizi",
+  "version": "0.0.1",
+  "depedencies": {
+    "mysql" : "^2.10.2",
+    "restify": "^4.0.4"
+  }
+}
