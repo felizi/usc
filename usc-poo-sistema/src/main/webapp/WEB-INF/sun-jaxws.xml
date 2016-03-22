@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+	version="2.0">
+	<endpoint name="VendaService" implementation="br.usc.poo.sistema.service.impl.VendaService"
+		url-pattern="/ws/venda" />
+
+	<endpoint name="VendedorService"
+		implementation="br.usc.poo.sistema.service.impl.VendedorService"
+		url-pattern="/ws/vendedor" />
+
+	<endpoint name="ProdutoService"
+		implementation="br.usc.poo.sistema.service.impl.ProdutoService"
+		url-pattern="/ws/produto" />
+</endpoints>
