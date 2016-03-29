@@ -1,0 +1,9 @@
+{
+  "name": "enigma",
+  "description": "Enigma API",
+  "author": "Daniel Felizi",
+  "version": "0.0.1",
+  "depedencies": {
+    "restify": "^4.0.4"
+  }
+}
