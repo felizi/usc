@@ -8,8 +8,10 @@ server.use(restify.fullResponse()).use(restify.bodyParser());
  */
 var bankResource = require('./resources/bankResource');
 
+// GET - Find of BankResource
+server.get('/api/v1/usc/bank/:id', bankResource.find);
 // GET - FindAll of BankResource
-server.get('/api/v1/usc/bank', bankResource.findAll);
+server.get('/api/v1/usc/banks', bankResource.findAll);
 // POST - Incluir um banco
 server.post('/api/v1/usc/bank', bankResource.insert);
 // DELETE - Deletar um banco através do código
