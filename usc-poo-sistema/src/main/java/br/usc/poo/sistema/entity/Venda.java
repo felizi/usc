@@ -54,6 +54,15 @@ public class Venda {
 	}
 
 	/**
+	 * Obter valor total comissao do vendedor.
+	 * 
+	 * @return double
+	 */
+	public double obterValorComissaoVendedor() {
+		return this.getProdutos().stream().map(p -> p.getValor()).reduce(0d, (totalValorComissaoVenda, valorVenda) -> totalValorComissaoVenda + valorVenda * this.getVendedor().getPercentualComissao());
+	}
+
+	/**
 	 * Código da venda
 	 *
 	 * @return codigo

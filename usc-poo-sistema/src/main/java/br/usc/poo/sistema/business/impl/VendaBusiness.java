@@ -168,7 +168,7 @@ public class VendaBusiness implements VendaBusinessInterface {
 		/**
 		 * Query
 		 */
-		Double totalComissaoVendasRealizadasPorDeterminadoVendedorMes = vendasRealizadasPorVendedorMes.stream().map(v -> v.getVendedor().getPercentualComissao()).reduce(0d, (totalComissao, comissao) -> totalComissao + comissao);
+		Double totalComissaoVendasRealizadasPorDeterminadoVendedorMes = vendasRealizadasPorVendedorMes.stream().map(v -> v.obterValorComissaoVendedor()).reduce(0d, (valorComissaoVendedor, totalValorComissaoVendedor) -> totalValorComissaoVendedor + valorComissaoVendedor);
 		return totalComissaoVendasRealizadasPorDeterminadoVendedorMes;
 	}
 

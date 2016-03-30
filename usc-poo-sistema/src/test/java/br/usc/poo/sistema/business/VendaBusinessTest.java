@@ -69,15 +69,15 @@ public class VendaBusinessTest {
 	}
 
 	@Test
-	public void deveObterComissaoIgual10Porcento() {
+	public void deveObterComissaoVendedorIgual1500Referente10Porcento() {
 		double totalComissaoSobreVendasRealizadasPorDeterminadoVendedor = VendaBusinessTest.vendaBusiness.obterTotalComissaoSobreVendasRealizadasPorDeterminadoVendedor(VendaBusinessTest.vendedorA.getCodigo());
-		Assert.assertEquals(10d, totalComissaoSobreVendasRealizadasPorDeterminadoVendedor, Double.MIN_NORMAL);
+		Assert.assertEquals(1500d, totalComissaoSobreVendasRealizadasPorDeterminadoVendedor, Double.MIN_NORMAL);
 	}
 
 	@Test
-	public void deveObterComissaoIgual7Porcento() {
+	public void deveObterComissaoIgual1050Referente7Porcento() {
 		double totalComissaoSobreVendasRealizadasPorDeterminadoVendedor = VendaBusinessTest.vendaBusiness.obterTotalComissaoSobreVendasRealizadasPorDeterminadoVendedor(VendaBusinessTest.vendedorB.getCodigo());
-		Assert.assertEquals(7d, totalComissaoSobreVendasRealizadasPorDeterminadoVendedor, Double.MIN_NORMAL);
+		Assert.assertEquals(1050d, totalComissaoSobreVendasRealizadasPorDeterminadoVendedor, Double.MIN_NORMAL);
 	}
 
 	@Test
@@ -93,9 +93,9 @@ public class VendaBusinessTest {
 	}
 
 	@Test
-	public void deveObterTotalComissaoSobreVendasRealizadasDeterminadoVendedor() {
+	public void deveObterTotalComissaoDeVendasRealizadasDeterminadoVendedor() {
 		double totalComissaoVendasRealizadasVendedor = VendaBusinessTest.vendaBusiness.obterTotalComissaoSobreVendasRealizadasPorDeterminadoVendedor(VendaBusinessTest.vendedorC.getCodigo());
-		Assert.assertEquals(90d, totalComissaoVendasRealizadasVendedor, Double.MIN_NORMAL);
+		Assert.assertEquals(13500d, totalComissaoVendasRealizadasVendedor, Double.MIN_NORMAL);
 	}
 
 	@Test
@@ -103,6 +103,6 @@ public class VendaBusinessTest {
 		Calendar calendar = Calendar.getInstance();
 		calendar.add(Calendar.MONTH, -7);
 		double totalComissaoVendasRealizadasVendedor = VendaBusinessTest.vendaBusiness.obterTotalComissaoSobreVendasRealizadasPorDeterminadoVendedorMes(VendaBusinessTest.vendedorC.getCodigo(), calendar.get(Calendar.MONTH));
-		Assert.assertEquals(60d, totalComissaoVendasRealizadasVendedor, Double.MIN_NORMAL);
+		Assert.assertEquals(9000d, totalComissaoVendasRealizadasVendedor, Double.MIN_NORMAL);
 	}
 }
