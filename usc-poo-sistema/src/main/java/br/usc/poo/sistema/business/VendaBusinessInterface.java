@@ -12,7 +12,6 @@ import br.usc.poo.sistema.entity.Vendedor;
  * Interface VendaBusinessInterface.
  */
 public interface VendaBusinessInterface {
-
 	/**
 	 * Realizar venda.
 	 *
